@@ -2,12 +2,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'Bruh', href: '#' },
-  { name: 'What', href: '#' },
-  { name: 'Here', href: '#' },
-]
+
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -36,16 +31,10 @@ export default function Navbar() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
-                {item.name}
-              </a>
-            ))}
-          </div>
+
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              Log in <span aria-hidden="true">&rarr;</span>
+            <a href="#" className="text-sm bg-indigo-500 px-6 py-1 font-semibold leading-6 text-white rounded-lg">
+              Log in
             </a>
           </div>
         </nav>
@@ -72,17 +61,7 @@ export default function Navbar() {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
+
                 <div className="py-6">
                   <a
                     href="#"
@@ -110,11 +89,11 @@ export default function Navbar() {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl mt-36">
+        <div className="mx-auto max-w-4xl mt-36">
    
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              A big title header text here
+            Your External Mind: <span className={'bg-green-600 text-white px-4 py-2 rounded-lg'}>Organize</span>, <br/> <span className={'bg-blue-600 text-white px-4 py-2 rounded-lg'}>Categorize</span>, and <span className={'bg-green-600 text-white px-4 py-2 rounded-lg'}>Store</span>.
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
