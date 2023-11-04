@@ -1,5 +1,11 @@
+import CenterPanel from "@/frontend/modules/app/CenterPanel";
+import SidePanel from "@/frontend/modules/app/SidePanel";
+
 export default function Home(){
     return(
-        <h1>home</h1>
+        <div className="flex">
+            <SidePanel/>
+            <CenterPanel/>
+        </div>
     )
 }
