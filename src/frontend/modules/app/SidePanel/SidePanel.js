@@ -3,14 +3,14 @@ import SidePanelTab from './SidePanelTab'
 
 export default function SidePanel(){
     return(
-        <div className="flex h-screen w-16 flex-col justify-between border-e bg-white">
+        <div className="flex h-screen w-16 flex-col justify-between bg-white">
             <div>
               <div className="inline-flex h-16 w-16 items-center justify-center">
                 <span className="grid h-10 w-10 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
                   SK
                 </span>
               </div>
-              <div className="border-t border-gray-100">
+              <div className=" border-gray-100">
                 <div className="px-2">
                   <div className="py-4">
                     <SidePanelTab icon={<HomeIcon className="h-6 w-6"/>} title={'Home'} />

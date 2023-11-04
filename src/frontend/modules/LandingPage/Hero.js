@@ -92,8 +92,8 @@ export default function Navbar() {
         <div className="mx-auto max-w-4xl mt-36">
    
           <div className="text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Your External Mind: <span className={'bg-green-600 text-white px-4 py-2 rounded-lg'}>Organize</span>, <br/> <span className={'bg-blue-600 text-white px-4 py-2 rounded-lg'}>Categorize</span>, and <span className={'bg-green-600 text-white px-4 py-2 rounded-lg'}>Store</span>.
+            <h1 className="text-4xl font-bold tracking-tight leading-loose text-gray-900 sm:text-6xl">
+            Your External Mind:<span className={'underline underline-offset-2 decoration-green-500 px-4 py-2 rounded-lg'}>Organize</span>, <br/> <span className={'underline underline-offset-2 decoration-blue-500 px-4 py-2 rounded-lg'}>Categorize</span>, and <span className={'underline underline-offset-2 decoration-yellow-500 px-4 py-2 rounded-lg'}>Store</span>.
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
